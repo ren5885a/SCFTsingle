@@ -1,0 +1,18 @@
+1026
+30.0
+0.500
+2.4494897427831781, 48.989794855663562,  48.989794855663562
+fet.dat
+pha.dat
+0.010
+1
+
+        fp=fopen("ab.txt","r");
+        fscanf(fp,"%d",&intag);         //in=1: inputing configuration is given;
+        fscanf(fp,"%lf",&hAB);
+        fscanf(fp, "%lf", &fA);
+        fscanf(fp,"%lf, %lf, %lf",&lx, &ly, &lz);
+        fscanf(fp,"%s",FEname);                         //output file name for parameters;
+        fscanf(fp,"%s",phname);                         //output file name for configuration;
+        fscanf(fp, "%lf", &ds0);
+	fscanf(fp, "%d", &Narm);
